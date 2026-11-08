@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "dashboards": "داشبوردها",
+    "analytics": "تحلیل‌ها",
+    "ecommerce": "فروشگاه",
+    "appsPages": "برنامه‌ها و صفحات",
+    "email": "ایمیل",
+    "chat": "گفتگو",
+    "todo": "کارها",
+    "calendar": "تقویم",
+    "users": "کاربران",
+    "settings": "تنظیمات"
+  },
+  "navbar": {
+    "openMenu": "باز کردن منو",
+    "closeMenu": "بستن منو",
+    "pin": "ثابت کردن سایدبار",
+    "unpin": "آزاد کردن سایدبار",
+    "bookmarks": "نشان‌شده‌ها",
+    "lightMode": "حالت روشن",
+    "darkMode": "حالت تیره",
+    "search": "جستجو",
+    "cart": "سبد خرید",
+    "notifications": "اعلان‌ها",
+    "language": "زبان",
+    "userName": "علی رضایی",
+    "userInitials": "ع.ر",
+    "userRole": "مدیر",
+    "profile": "پروفایل من",
+    "signOut": "خروج"
+  },
+  "common": {
+    "comingSoon": "به‌زودی",
+    "error": "مشکلی پیش اومد",
+    "retry": "تلاش دوباره",
+    "close": "بستن",
+    "cancel": "انصراف"
+  },
+  "notifications": {
+    "title": "اعلان‌ها",
+    "newCount": "{{n}} جدید",
+    "markAllRead": "همه خوانده شد",
+    "markRead": "خوانده شد",
+    "remove": "حذف",
+    "empty": "همه‌چیز خوانده شده",
+    "emptyHint": "اعلان‌های جدید اینجا نمایش داده می‌شن.",
+    "items": {
+      "newOrder": {
+        "title": "سفارش جدید",
+        "body": "سفارش {{id}} توسط یک مشتری جدید ثبت شد."
+      },
+      "newUser": {
+        "title": "کاربر جدید",
+        "body": "یک کاربر جدید در فروشگاه ثبت‌نام کرد."
+      },
+      "payment": {
+        "title": "پرداخت در انتظار",
+        "body": "فاکتور {{id}} منتظر پرداخت است."
+      },
+      "server": {
+        "title": "هشدار سرور",
+        "body": "بار سرور از حد معمول بیشتره. صفحه‌ی وضعیت رو بررسی کن."
+      },
+      "delivered": {
+        "title": "سفارش تحویل شد",
+        "body": "سفارش {{id}} با موفقیت تحویل شد."
+      },
+      "invite": {
+        "title": "دعوت پذیرفته شد",
+        "body": "یک عضو جدید به فضای کاری شما پیوست."
+      }
+    }
+  },
+  "cart": {
+    "title": "سبد خرید",
+    "itemsCount": "{{n}} کالا",
+    "empty": "سبد خرید خالیه",
+    "emptyHint": "کالاهایی که اضافه کنی اینجا نمایش داده می‌شن.",
+    "total": "جمع کل",
+    "checkout": "تسویه حساب",
+    "clear": "خالی کردن سبد",
+    "remove": "حذف",
+    "increase": "افزایش تعداد",
+    "decrease": "کاهش تعداد",
+    "products": {
+      "headphones": "هدفون بی‌سیم",
+      "watch": "ساعت هوشمند",
+      "keyboard": "کیبورد مکانیکی"
+    }
+  },
+  "search": {
+    "title": "جستجو",
+    "placeholder": "جستجوی صفحه‌ها و کارها...",
+    "noResults": "نتیجه‌ای برای «{{q}}» پیدا نشد",
+    "noResultsHint": "یه کلمه‌ی دیگه رو امتحان کن.",
+    "switchLanguage": "تغییر زبان",
+    "navigate": "حرکت",
+    "select": "انتخاب",
+    "close": "بستن",
+    "groups": {
+      "pages": "صفحه‌ها",
+      "actions": "کارها"
+    }
+  },
+  "bookmarks": {
+    "add": "نشان‌کردن این صفحه",
+    "remove": "حذف از نشان‌شده‌ها",
+    "full": "نشان‌شده‌ها پر شده (حداکثر ۶ تا)",
+    "unavailable": "این صفحه قابل نشان‌کردن نیست"
+  },
+  "dashboard": {
+    "welcome": {
+      "title": "تبریک {{name}}! 🎉",
+      "name": "علی",
+      "subtitle": "تو مدال طلای فروش رو بردی",
+      "viewSales": "مشاهده‌ی فروش"
+    },
+    "statistics": {
+      "title": "آمار",
+      "updated": "آخرین به‌روزرسانی: {{time}}",
+      "sales": "فروش",
+      "customers": "مشتریان",
+      "products": "محصولات",
+      "revenue": "درآمد"
+    },
+    "week": "هفته {{n}}",
+    "orders": { "title": "سفارش‌ها" },
+    "profit": { "title": "سود" },
+    "earnings": {
+      "title": "عایدی",
+      "thisMonth": "این ماه",
+      "growth": "{{value}} درآمد بیشتر از ماه قبل.",
+      "segments": { "app": "اپلیکیشن", "service": "خدمات", "other": "سایر" }
+    },
+    "revenue": {
+      "title": "گزارش درآمد",
+      "earning": "درآمد",
+      "expense": "هزینه",
+      "year": "سال",
+      "budget": "بودجه: {{value}}",
+      "increaseBudget": "افزایش بودجه",
+      "modal": {
+        "title": "افزایش بودجه",
+        "description": "مبلغ مورد نظر به بودجه‌ی سال {{year}} اضافه می‌شه.",
+        "amount": "مبلغ (دلار)",
+        "submit": "افزایش",
+        "saving": "در حال ذخیره...",
+        "error": "بودجه به‌روزرسانی نشد. دوباره امتحان کن."
+      }
+    },
+    "companies": {
+  "title": "برترین شرکت‌ها",
+  "search": "جستجوی شرکت‌ها...",
+  "empty": "شرکتی پیدا نشد.",
+  "columns": {
+    "company": "شرکت",
+    "category": "دسته‌بندی",
+    "views": "بازدید",
+    "revenue": "درآمد",
+    "sales": "فروش"
+  },
+  "categories": {
+    "technology": "فناوری",
+    "grocery": "خواربار",
+    "fashion": "مد و پوشاک",
+    "health": "سلامت",
+    "sports": "ورزش",
+    "fitness": "تناسب‌اندام"
+  },
+  "periods": {
+    "h24": "در ۲۴ ساعت",
+    "d2": "در ۲ روز",
+    "d7": "در ۷ روز",
+    "d30": "در ۳۰ روز"
+  },
+  "trendUp": "رو به رشد",
+  "trendDown": "رو به کاهش"
+},
+"goal": {
+  "title": "هدف ماهانه",
+  "reached": "تو {{value}} از هدف این ماه رو رسیدی.",
+  "progress": "پیشرفت هدف",
+  "viewReport": "مشاهده‌ی گزارش"
+}
+  }
+}

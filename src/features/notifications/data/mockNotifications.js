@@ -1,0 +1,58 @@
+const minutesAgo = (m) => Date.now() - m * 60_000
+
+export const initialNotifications = [
+  {
+    id: 1,
+    type: 'order',
+    titleKey: 'notifications.items.newOrder.title',
+    bodyKey: 'notifications.items.newOrder.body',
+    values: { id: '#4821' },
+    createdAt: minutesAgo(5),
+    read: false,
+  },
+  {
+    id: 2,
+    type: 'user',
+    titleKey: 'notifications.items.newUser.title',
+    bodyKey: 'notifications.items.newUser.body',
+    values: {},
+    createdAt: minutesAgo(40),
+    read: false,
+  },
+  {
+    id: 3,
+    type: 'payment',
+    titleKey: 'notifications.items.payment.title',
+    bodyKey: 'notifications.items.payment.body',
+    values: { id: 'INV-2031' },
+    createdAt: minutesAgo(3 * 60),
+    read: false,
+  },
+  {
+    id: 4,
+    type: 'system',
+    titleKey: 'notifications.items.server.title',
+    bodyKey: 'notifications.items.server.body',
+    values: {},
+    createdAt: minutesAgo(8 * 60),
+    read: false,
+  },
+  {
+    id: 5,
+    type: 'order',
+    titleKey: 'notifications.items.delivered.title',
+    bodyKey: 'notifications.items.delivered.body',
+    values: { id: '#4807' },
+    createdAt: minutesAgo(26 * 60),
+    read: true,
+  },
+  {
+    id: 6,
+    type: 'user',
+    titleKey: 'notifications.items.invite.title',
+    bodyKey: 'notifications.items.invite.body',
+    values: {},
+    createdAt: minutesAgo(3 * 24 * 60),
+    read: true,
+  },
+]

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#7367f0" />
+    <title>Dashly Admin</title>
+    <script>
+      try {
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-background font-sans text-foreground antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+  <script>
+    try {
+      var d = document.documentElement;
+      if (localStorage.getItem("theme") === "dark") d.classList.add("dark");
+      if (localStorage.getItem("lang") === "fa") {
+        d.lang = "fa";
+        d.dir = "rtl";
+      }
+    } catch (e) {}
+  </script>
+</html>

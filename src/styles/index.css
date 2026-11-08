@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8f7fa;
+  --card: #ffffff;
+  --foreground: #6f6b7d;
+  --heading: #444050;
+  --muted: #a5a3ae;
+  --border: #e6e5e8;
+  --hover: #f1f0f2;
+}
+
+.dark {
+  --background: #25293c;
+  --card: #2f3349;
+  --foreground: #b6bee3;
+  --heading: #cfd3ec;
+  --muted: #7983bb;
+  --border: #434968;
+  --hover: #3a3f5c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-heading: var(--heading);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-hover: var(--hover);
+}
+
+@theme {
+  --font-sans: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #7367f0;
+  --color-success: #28c76f;
+  --color-warning: #ff9f43;
+  --color-danger: #ea5455;
+  --color-info: #00cfe8;
+
+  --shadow-card: 0 0.25rem 1.125rem rgb(75 70 92 / 0.1);
+  --shadow-glow: 0 2px 8px rgb(115 103 240 / 0.5);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+html[lang="fa"] {
+  --font-sans: "Vazirmatn Variable", ui-sans-serif, system-ui, sans-serif;
+}

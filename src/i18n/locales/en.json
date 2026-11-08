@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "dashboards": "Dashboards",
+    "analytics": "Analytics",
+    "ecommerce": "eCommerce",
+    "appsPages": "Apps & Pages",
+    "email": "Email",
+    "chat": "Chat",
+    "todo": "Todo",
+    "calendar": "Calendar",
+    "users": "Users",
+    "settings": "Settings"
+  },
+  "navbar": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "pin": "Pin sidebar",
+    "unpin": "Unpin sidebar",
+    "bookmarks": "Bookmarks",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "search": "Search",
+    "cart": "Cart",
+    "notifications": "Notifications",
+    "language": "Language",
+    "userName": "John Doe",
+    "userInitials": "JD",
+    "userRole": "Admin",
+    "profile": "My Profile",
+    "signOut": "Sign out"
+  },
+  "common": {
+    "comingSoon": "Coming soon",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "close": "Close",
+    "cancel": "Cancel"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "newCount": "{{n}} New",
+    "markAllRead": "Mark all as read",
+    "markRead": "Mark as read",
+    "remove": "Remove",
+    "empty": "You're all caught up",
+    "emptyHint": "New notifications will show up here.",
+    "items": {
+      "newOrder": {
+        "title": "New order received",
+        "body": "Order {{id}} was placed by a new customer."
+      },
+      "newUser": {
+        "title": "New user registered",
+        "body": "A new user just signed up to the store."
+      },
+      "payment": {
+        "title": "Payment pending",
+        "body": "Invoice {{id}} is waiting for payment."
+      },
+      "server": {
+        "title": "Server warning",
+        "body": "Server load is above normal. Check the status page."
+      },
+      "delivered": {
+        "title": "Order delivered",
+        "body": "Order {{id}} was delivered successfully."
+      },
+      "invite": {
+        "title": "Invite accepted",
+        "body": "A new team member joined your workspace."
+      }
+    }
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "itemsCount": "{{n}} Items",
+    "empty": "Your cart is empty",
+    "emptyHint": "Items you add will show up here.",
+    "total": "Total",
+    "checkout": "Checkout",
+    "clear": "Clear cart",
+    "remove": "Remove",
+    "increase": "Increase quantity",
+    "decrease": "Decrease quantity",
+    "products": {
+      "headphones": "Wireless Headphones",
+      "watch": "Smart Watch",
+      "keyboard": "Mechanical Keyboard"
+    }
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search pages and actions...",
+    "noResults": "No results for \"{{q}}\"",
+    "noResultsHint": "Try a different keyword.",
+    "switchLanguage": "Switch language",
+    "navigate": "Navigate",
+    "select": "Select",
+    "close": "Close",
+    "groups": {
+      "pages": "Pages",
+      "actions": "Actions"
+    }
+  },
+  "bookmarks": {
+    "add": "Bookmark this page",
+    "remove": "Remove bookmark",
+    "full": "Bookmarks are full (max 6)",
+    "unavailable": "This page can't be bookmarked"
+  },
+  "dashboard": {
+    "welcome": {
+      "title": "Congratulations {{name}}! 🎉",
+      "name": "John",
+      "subtitle": "You have won gold medal",
+      "viewSales": "View Sales"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "updated": "Updated {{time}}",
+      "sales": "Sales",
+      "customers": "Customers",
+      "products": "Products",
+      "revenue": "Revenue"
+    },
+    "week": "Week {{n}}",
+    "orders": { "title": "Orders" },
+    "profit": { "title": "Profit" },
+    "earnings": {
+      "title": "Earnings",
+      "thisMonth": "This Month",
+      "growth": "{{value}} more earnings than last month.",
+      "segments": { "app": "App", "service": "Service", "other": "Other" }
+    },
+    "revenue": {
+      "title": "Revenue Report",
+      "earning": "Earning",
+      "expense": "Expense",
+      "year": "Year",
+      "budget": "Budget: {{value}}",
+      "increaseBudget": "Increase Budget",
+      "modal": {
+        "title": "Increase Budget",
+        "description": "Add to the {{year}} budget.",
+        "amount": "Amount (USD)",
+        "submit": "Increase",
+        "saving": "Saving...",
+        "error": "Couldn't update the budget. Try again."
+      }
+    },
+    "companies": {
+      "title": "Top Companies",
+      "search": "Search companies...",
+      "empty": "No companies found.",
+      "columns": {
+        "company": "Company",
+        "category": "Category",
+        "views": "Views",
+        "revenue": "Revenue",
+        "sales": "Sales"
+      },
+      "categories": {
+        "technology": "Technology",
+        "grocery": "Grocery",
+        "fashion": "Fashion",
+        "health": "Health",
+        "sports": "Sports",
+        "fitness": "Fitness"
+      },
+      "periods": {
+        "h24": "in 24 hours",
+        "d2": "in 2 days",
+        "d7": "in 7 days",
+        "d30": "in 30 days"
+      },
+      "trendUp": "Trending up",
+      "trendDown": "Trending down"
+    },
+    "goal": {
+      "title": "Monthly Goal",
+      "reached": "You've reached {{value}} of this month's target.",
+      "progress": "Goal progress",
+      "viewReport": "View report"
+    }
+  }
+}
