@@ -20,6 +20,7 @@
   --muted: #7983bb;
   --border: #434968;
   --hover: #3a3f5c;
+  color-scheme: dark;
 }
 
 @theme inline {

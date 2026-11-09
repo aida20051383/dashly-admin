@@ -11,16 +11,22 @@ import { ThemeProvider } from "@/app/ThemeProvider.jsx";
 import { NotificationsProvider } from "@/features/notifications/NotificationsContext.jsx";
 import { CartProvider } from "@/features/cart/CartContext.jsx";
 import { router } from "@/app/router.jsx";
+import { ToastProvider } from "@/app/ToastProvider.jsx";
+import { AuthProvider } from "@/features/auth/AuthContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider>
       <QueryClientProvider client={queryClient}>
-        <NotificationsProvider>
-          <CartProvider>
-            <RouterProvider router={router} />
-          </CartProvider>
-        </NotificationsProvider>
+        <AuthProvider>
+          <ToastProvider>
+            <NotificationsProvider>
+              <CartProvider>
+                <RouterProvider router={router} />
+              </CartProvider>
+            </NotificationsProvider>
+          </ToastProvider>
+        </AuthProvider>
       </QueryClientProvider>
     </ThemeProvider>
   </StrictMode>,

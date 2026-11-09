@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 import { LogOut, Settings, User } from "lucide-react";
 import Dropdown from "@/components/ui/Dropdown.jsx";
 import Avatar from "@/components/ui/Avatar.jsx";
+import { useAuth } from "@/features/auth/AuthContext.jsx";
+import { useToast } from "@/app/ToastProvider.jsx";
+import { getInitials } from "@/lib/text.js";
 import { cn } from "@/lib/cn.js";
 
 const itemClass =
@@ -10,9 +13,18 @@ const itemClass =
 
 export default function UserMenu() {
   const { t } = useTranslation();
-  const name = t("navbar.userName");
-  const role = t("navbar.userRole");
-  const initials = t("navbar.userInitials");
+  const { user, logout } = useAuth();
+  const toast = useToast();
+
+  const name = user?.name ?? "";
+  const role = t(`users.roles.${user?.role ?? "subscriber"}`);
+  const initials = getInitials(name);
+
+  const signOut = (close) => {
+    close();
+    logout(); // RequireAuth خودش به /login می‌فرسته
+    toast.success(t("auth.signedOut"));
+  };
 
   return (
     <Dropdown
@@ -71,7 +83,7 @@ export default function UserMenu() {
 
             <button
               type="button"
-              onClick={close}
+              onClick={() => signOut(close)}
               role="menuitem"
               className={cn(itemClass, "hover:bg-danger/10 hover:text-danger")}
             >

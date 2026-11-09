@@ -57,3 +57,8 @@ export function formatYear(year, lng) {
     year,
   );
 }
+export function formatDate(value, lng) {
+  return new Intl.DateTimeFormat(localeOf(lng), { dateStyle: "medium" }).format(
+    value,
+  );
+}

@@ -34,7 +34,8 @@
     "error": "Something went wrong",
     "retry": "Retry",
     "close": "Close",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "saving": "Saving..."
   },
   "notifications": {
     "title": "Notifications",
@@ -181,6 +182,219 @@
       "reached": "You've reached {{value}} of this month's target.",
       "progress": "Goal progress",
       "viewReport": "View report"
+    }
+  },
+  "users": {
+    "title": "Users",
+    "subtitle": "Manage your team and customers.",
+    "addUser": "Add User",
+    "search": "Search by name or email...",
+    "filters": {
+      "role": "Role",
+      "status": "Status",
+      "allRoles": "All roles",
+      "allStatuses": "All statuses"
+    },
+    "columns": {
+      "user": "User",
+      "role": "Role",
+      "status": "Status",
+      "joined": "Joined",
+      "actions": "Actions"
+    },
+    "roles": {
+      "admin": "Admin",
+      "editor": "Editor",
+      "author": "Author",
+      "maintainer": "Maintainer",
+      "subscriber": "Subscriber"
+    },
+    "statuses": {
+      "active": "Active",
+      "pending": "Pending",
+      "inactive": "Inactive"
+    },
+    "empty": {
+      "title": "No users found",
+      "hint": "Try changing your search or filters.",
+      "clear": "Clear filters"
+    },
+    "actions": {
+      "edit": "Edit user",
+      "delete": "Delete user"
+    },
+    "form": {
+      "addTitle": "Add New User",
+      "editTitle": "Edit User",
+      "name": "Full name",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "create": "Add user",
+      "save": "Save changes",
+      "errors": {
+        "name": "Enter at least 2 characters.",
+        "email": "Enter a valid email address.",
+        "emailTaken": "This email is already in use.",
+        "generic": "Something went wrong. Please try again."
+      }
+    },
+    "delete": {
+      "title": "Delete user",
+      "message": "Are you sure you want to delete {{name}}? This can't be undone.",
+      "confirm": "Delete",
+      "deleting": "Deleting...",
+      "error": "Couldn't delete the user. Try again."
+    },
+    "toasts": {
+      "created": "User added.",
+      "updated": "User updated.",
+      "deleted": "User deleted."
+    }
+  },
+  "pagination": {
+    "showing": "Showing {{from}} to {{to}} of {{total}}",
+    "perPage": "Per page",
+    "previous": "Previous page",
+    "next": "Next page",
+    "page": "Page {{n}}"
+  },
+  "auth": {
+    "welcome": "Welcome to Dashly 👋",
+    "subtitle": "Sign in to your account to continue.",
+    "email": "Email",
+    "password": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "remember": "Remember me",
+    "signIn": "Sign in",
+    "signingIn": "Signing in...",
+    "signedOut": "You've been signed out.",
+    "demo": {
+      "title": "Demo account",
+      "fill": "Fill in"
+    },
+    "errors": {
+      "email": "Enter a valid email address.",
+      "password": "Enter your password.",
+      "invalid": "Incorrect email or password.",
+      "generic": "Something went wrong. Please try again."
+    },
+    "hero": {
+      "title": "Run your store from one place",
+      "text": "Orders, customers and revenue, all in a single fast dashboard.",
+      "features": {
+        "insights": "Live sales insights",
+        "secure": "Role-based access",
+        "bilingual": "English & Persian, light & dark"
+      }
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "subtitle": "Manage your personal information and password.",
+    "memberSince": "Member since {{date}}",
+    "info": {
+      "title": "Personal Information",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone number",
+      "bio": "About you",
+      "bioCount": "{{n}}/{{max}}",
+      "save": "Save changes",
+      "reset": "Reset",
+      "saved": "Profile updated."
+    },
+    "password": {
+      "title": "Change Password",
+      "current": "Current password",
+      "new": "New password",
+      "newHint": "Use at least 8 characters.",
+      "confirm": "Confirm new password",
+      "show": "Show passwords",
+      "submit": "Update password",
+      "saved": "Password updated."
+    },
+    "errors": {
+      "name": "Enter at least 2 characters.",
+      "email": "Enter a valid email address.",
+      "emailTaken": "This email is already in use.",
+      "phone": "Enter a valid phone number.",
+      "currentRequired": "Enter your current password.",
+      "currentWrong": "Current password is incorrect.",
+      "newShort": "Use at least 8 characters.",
+      "newSame": "New password must be different.",
+      "confirmMismatch": "Passwords don't match.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "profile": {
+    "title": "پروفایل من",
+    "subtitle": "اطلاعات شخصی و رمز عبورت رو مدیریت کن.",
+    "memberSince": "عضو از {{date}}",
+    "info": {
+      "title": "اطلاعات شخصی",
+      "name": "نام و نام خانوادگی",
+      "email": "ایمیل",
+      "phone": "شماره‌ی تماس",
+      "bio": "درباره‌ی تو",
+      "bioCount": "{{n}}/{{max}}",
+      "save": "ذخیره‌ی تغییرات",
+      "reset": "بازنشانی",
+      "saved": "پروفایل به‌روزرسانی شد."
+    },
+    "password": {
+      "title": "تغییر رمز عبور",
+      "current": "رمز عبور فعلی",
+      "new": "رمز عبور جدید",
+      "newHint": "حداقل ۸ کاراکتر.",
+      "confirm": "تکرار رمز عبور جدید",
+      "show": "نمایش رمزها",
+      "submit": "به‌روزرسانی رمز",
+      "saved": "رمز عبور به‌روزرسانی شد."
+    },
+    "errors": {
+      "name": "حداقل ۲ حرف وارد کن.",
+      "email": "یه ایمیل معتبر وارد کن.",
+      "emailTaken": "این ایمیل قبلاً استفاده شده.",
+      "phone": "یه شماره‌ی معتبر وارد کن.",
+      "currentRequired": "رمز عبور فعلی رو وارد کن.",
+      "currentWrong": "رمز عبور فعلی اشتباهه.",
+      "newShort": "حداقل ۸ کاراکتر وارد کن.",
+      "newSame": "رمز جدید باید با رمز فعلی فرق داشته باشه.",
+      "confirmMismatch": "رمزها یکسان نیستن.",
+      "generic": "مشکلی پیش اومد. دوباره امتحان کن."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Customize how Dashly looks and what you get notified about.",
+    "appearance": {
+      "title": "Appearance",
+      "theme": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "language": "Language"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Saved on this device.",
+      "email": "Email notifications",
+      "emailDesc": "Get a summary of important activity by email.",
+      "push": "Push notifications",
+      "pushDesc": "Show alerts for new orders and messages.",
+      "orders": "Order updates",
+      "ordersDesc": "Tell me when an order status changes.",
+      "weekly": "Weekly report",
+      "weeklyDesc": "Send me a performance report every Monday."
+    },
+    "danger": {
+      "title": "Danger zone",
+      "description": "Clears the cart, notifications, bookmarks and layout preferences saved on this device, and restores the demo data. You will stay signed in.",
+      "reset": "Reset demo data",
+      "confirmText": "Are you sure? This can't be undone.",
+      "confirm": "Yes, reset",
+      "cancel": "Cancel"
     }
   }
 }
