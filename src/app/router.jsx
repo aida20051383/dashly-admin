@@ -10,6 +10,11 @@ import {
 import FallbackPage from "@/pages/FallbackPage.jsx";
 import ProfilePage from "@/features/profile/pages/ProfilePage.jsx";
 import SettingsPage from "@/features/settings/pages/SettingsPage.jsx";
+import TodoPage from "@/features/todo/pages/TodoPage.jsx";
+import CalendarPage from "@/features/calendar/pages/CalendarPage.jsx";
+import EmailPage from "@/features/email/pages/EmailPage.jsx";
+import ChatPage from "@/features/chat/pages/ChatPage.jsx";
+import AnalyticsPage from "@/features/analytics/pages/AnalyticsPage.jsx";
 
 export const router = createBrowserRouter([
   // مهمان‌ها
@@ -35,6 +40,11 @@ export const router = createBrowserRouter([
           { path: "*", element: <FallbackPage /> },
           { path: "profile", element: <ProfilePage /> },
           { path: "settings", element: <SettingsPage /> },
+          { path: "apps/todo", element: <TodoPage /> },
+          { path: "apps/calendar", element: <CalendarPage /> },
+          { path: "apps/email", element: <EmailPage /> },
+          { path: "apps/chat", element: <ChatPage /> },
+          { path: "dashboard/analytics", element: <AnalyticsPage /> },
         ],
       },
     ],

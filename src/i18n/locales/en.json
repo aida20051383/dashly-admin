@@ -396,5 +396,142 @@
       "confirm": "Yes, reset",
       "cancel": "Cancel"
     }
+  },
+  "todo": {
+    "title": "Todo",
+    "subtitle": "Plan your work and tick things off.",
+    "add": {
+      "placeholder": "What needs to be done?",
+      "due": "Due date",
+      "button": "Add task",
+      "adding": "Adding...",
+      "required": "Enter a task title."
+    },
+    "filters": { "all": "All", "active": "Active", "done": "Completed" },
+    "search": "Search tasks",
+    "priority": {
+      "label": "Priority",
+      "all": "All priorities",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "overdue": "Overdue",
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel"
+    },
+    "empty": {
+      "title": "Nothing here",
+      "description": "No tasks match this view."
+    },
+    "toast": {
+      "created": "Task added.",
+      "deleted": "Task deleted.",
+      "failed": "Something went wrong. Try again."
+    },
+    "error": { "title": "Couldn't load tasks", "retry": "Try again" }
+  },
+  "calendar": {
+    "title": "Calendar",
+    "subtitle": "Plan meetings, deadlines and personal events.",
+    "today": "Today",
+    "prev": "Previous month",
+    "next": "Next month",
+    "more": "+{{n}} more",
+    "categories": {
+      "meeting": "Meeting",
+      "work": "Work",
+      "personal": "Personal",
+      "deadline": "Deadline"
+    },
+    "panel": {
+      "noEvents": "No events on this day.",
+      "addTitle": "Add event",
+      "editTitle": "Edit event",
+      "titleLabel": "Title",
+      "timeLabel": "Time (optional)",
+      "categoryLabel": "Category",
+      "add": "Add event",
+      "adding": "Adding...",
+      "save": "Save changes",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete",
+      "allDay": "All day",
+      "required": "Enter a title."
+    },
+    "toast": {
+      "created": "Event added.",
+      "updated": "Event updated.",
+      "deleted": "Event deleted.",
+      "failed": "Something went wrong. Try again."
+    },
+    "error": { "title": "Couldn't load events", "retry": "Try again" }
+  },
+  "chat": {
+    "title": "Chat",
+    "search": "Search conversations",
+    "selectHint": "Pick a conversation to start chatting",
+    "online": "Online",
+    "offline": "Offline",
+    "typing": "{{name}} is typing...",
+    "placeholder": "Type a message",
+    "send": "Send message",
+    "back": "Back",
+    "you": "You",
+    "empty": {
+      "title": "No conversations",
+      "description": "Nothing matches your search."
+    },
+    "toast": { "failed": "Message couldn't be sent. Try again." },
+    "error": { "title": "Couldn't load chats", "retry": "Try again" }
+  },
+  "analytics": {
+    "title": "Analytics",
+    "subtitle": "How your store is performing.",
+    "range": {
+      "label": "Date range",
+      "d7": "7 days",
+      "d30": "30 days",
+      "d90": "90 days"
+    },
+    "vsPrevious": "vs previous period",
+    "kpis": {
+      "visitors": "Visitors",
+      "pageViews": "Page views",
+      "conversion": "Conversion rate",
+      "duration": "Avg. session"
+    },
+    "traffic": {
+      "title": "Traffic overview",
+      "current": "This period",
+      "previous": "Previous period"
+    },
+    "sources": {
+      "title": "Traffic sources",
+      "organic": "Organic search",
+      "direct": "Direct",
+      "social": "Social media",
+      "referral": "Referral",
+      "email": "Email"
+    },
+    "devices": {
+      "title": "Devices",
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "tablet": "Tablet"
+    },
+    "countries": { "title": "Top countries" },
+    "pages": {
+      "title": "Top pages",
+      "page": "Page",
+      "views": "Views",
+      "bounce": "Bounce rate"
+    },
+    "error": { "title": "Couldn't load analytics", "retry": "Try again" }
   }
 }
