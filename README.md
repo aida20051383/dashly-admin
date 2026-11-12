@@ -26,7 +26,7 @@ A responsive, bilingual (English / Persian with full RTL) admin dashboard built 
 | --------- | ----------------------------------------------- |
 | Framework | React 19 + Vite (JavaScript)                    |
 | Styling   | Tailwind CSS v4 with CSS-variable design tokens |
-| Routing   | React Router v6 (nested routes, route guards)   |
+| Routing   | React Router v7 (nested routes, route guards)   |
 | Data      | TanStack Query v5 over a mock async API layer   |
 | Charts    | Recharts                                        |
 | i18n      | i18next + react-i18next (en / fa, RTL)          |
@@ -58,7 +58,7 @@ Design decisions worth noting:
 ## Getting started
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/dashly-admin.git
+git clone https://github.com/aida20051383/dashly-admin.git
 cd dashly-admin
 npm install
 npm run dev
