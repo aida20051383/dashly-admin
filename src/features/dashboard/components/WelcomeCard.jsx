@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/Card.jsx";
+import { useAuth } from "@/features/auth/AuthContext.jsx";
 import Skeleton from "@/components/ui/Skeleton.jsx";
 import QueryError from "@/components/ui/QueryError.jsx";
 import MedalIllustration from "@/features/dashboard/components/MedalIllustration.jsx";
@@ -9,7 +10,9 @@ import { formatCurrency } from "@/lib/format.js";
 
 export default function WelcomeCard() {
   const { t, i18n } = useTranslation();
-  const { data, isPending, isError, refetch } = useWelcome();
+  const { data, isPending, isError, error, refetch } = useWelcome();
+  const { user } = useAuth();
+  const firstName = user?.name?.split(" ")[0];
 
   return (
     <Card className="relative h-full overflow-hidden p-6">
@@ -17,14 +20,14 @@ export default function WelcomeCard() {
 
       <div className="max-w-[70%]">
         <h2 className="text-lg font-semibold text-heading">
-          {t("dashboard.welcome.title", { name: t("dashboard.welcome.name") })}
+          {t("dashboard.welcome.title", { name: firstName || t("dashboard.welcome.name") })}
         </h2>
         <p className="mt-1 text-sm">{t("dashboard.welcome.subtitle")}</p>
       </div>
 
       <div className="mt-6">
         {isPending && <Skeleton className="h-9 w-28" />}
-        {isError && <QueryError onRetry={refetch} />}
+        {isError && <QueryError error={error} onRetry={refetch} />}
         {data && (
           <p className="text-3xl font-bold text-primary">
             {formatCurrency(data.amount, i18n.language, {
