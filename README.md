@@ -6,8 +6,15 @@ A responsive, bilingual (English / Persian with full RTL) admin dashboard built 
 
 > Demo sign-in: `admin@dashly.dev` / `admin123` (admin) or `sara@dashly.dev` / `sara12345` (editor). The login page has a "Fill in" button.
 
-<!-- Add 2-3 screenshots here: light, dark and Persian/RTL -->
-<!-- ![Dashboard](docs/dashboard.png) -->
+## Screenshots
+
+| Light | Dark |
+| ----- | ---- |
+| ![Dashboard, light theme](docs/dashboard-light.png) | ![Dashboard, dark theme](docs/dashboard-dark.png) |
+
+| Persian (RTL) | Analytics |
+| ------------- | --------- |
+| ![Dashboard, Persian RTL layout](docs/dashboard-fa.png) | ![Analytics page](docs/analytics.png) |
 
 ## Features
 
